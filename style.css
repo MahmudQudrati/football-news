@@ -12,6 +12,13 @@ body {
 .header-img {
   width: 50%;
 }
+button {
+  background-color: #e02c6d;
+  border: none;
+  padding: 15px 24px;
+  margin-left: 156px;
+  border-radius: 5px;
+}
 /* header style  */
 .header-section {
   background-color: #2d25a0;
@@ -71,13 +78,7 @@ nav ul li a {
   margin-bottom: 20px;
   margin-top: 0px;
 }
-button {
-  background-color: #e02c6d;
-  border: none;
-  padding: 15px 24px;
-  margin-left: 156px;
-  border-radius: 5px;
-}
+
 button a,
 .fas {
   color: white;
@@ -87,17 +88,19 @@ button a,
 button .fa-arrow-right {
   margin-left: 5px;
 }
-.header-img:hover img {
-  transform: scale(1.3);
-  transition: transform 2s ease-in-out;
-}
 .header-img img {
   width: 470px;
   height: 400px;
   padding-top: 60px;
   padding-left: 60px;
 }
+.header-img:hover img {
+  transform: scale(1.2);
+  transition: transform 2s ease-in-out;
+}
+
 /* main section start  */
+
 .article-blogs {
   display: flex;
   align-items: center;
@@ -111,7 +114,6 @@ button .fa-arrow-right {
 .blog {
   box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.192);
   border-radius: 5px;
-
   width: 250px;
   height: 370px;
   padding: 15px 15px 30px 15px;
@@ -142,9 +144,9 @@ button .fa-arrow-right {
   flex-direction: column;
   align-items: center;
 }
-.live-section-title h1 {
-  color: #2d25a0;
-  font-size: 40px;
+#live-section-title h1 {
+  color: #726eaf;
+  font-size: 45px;
 }
 .matches-scedule {
   box-shadow: 5px 5px 40px gainsboro;
@@ -163,7 +165,9 @@ button .fa-arrow-right {
 .match-info {
   margin: auto 30px;
 }
+
 /* highlights section  */
+
 .highlights {
   margin-top: 120px;
   display: flex;
@@ -180,14 +184,7 @@ button .fa-arrow-right {
   width: 70%;
   padding-left: 136px;
 }
-.right-col .highlights-img {
-  width: 567px;
-  height: 427px;
-}
-.right-col .highlights-img img {
-  width: 90%;
-  border-radius: 5px;
-}
+
 .highlights-description p {
   font-size: 14px;
   margin-right: 0;
@@ -203,9 +200,19 @@ button .fa-arrow-right {
   margin-left: 0;
   margin-top: 10px;
 }
+.right-col .highlights-img {
+  width: 567px;
+  height: 427px;
+}
+.right-col .highlights-img img {
+  width: 90%;
+  border-radius: 5px;
+}
+
 /* golden player */
-.gold-ball-title h1 {
-  color: #2d25a0;
+
+#gold-ball-title h1 {
+  color: #2d25a0dc;
   font-size: 40px;
   text-align: center;
 }
@@ -222,12 +229,12 @@ button .fa-arrow-right {
   margin: 0 15px 60px 15px;
   padding: 15px;
 }
-
 .player-img img {
   border-radius: 5px;
 }
 
 /* footer  */
+
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -251,46 +258,39 @@ button .fa-arrow-right {
 }
 /* responsive design start  */
 @media only screen and (max-width: 667px) {
-  /* common style */
-
-  /* main styles  */
-
-  .header-img {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .header-img img {
-    width: 80%;
-    padding-left: 0;
-    height: auto;
-  }
-  .blogs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .right-col .highlights-img {
-    width: 300px;
-    height: auto;
-  }
-  .highlights {
-    margin-top: 120px;
-    display: flex;
-    margin-bottom: 80px;
-    flex-direction: column;
-  }
-  nav ul {
-    display: none;
-    display: block;
-    padding-left: 0;
-    padding-right: 0;
-  }
+  /* header start */
+  nav ul,
   .nav-bar {
     display: none;
   }
   .login-button {
     display: none;
+  }
+
+  .header-title,
+  .header-img {
+    width: 90%;
+  }
+  .header-title-and-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .header-title h1 {
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 36px;
+    line-height: normal;
+  }
+  .header-img img {
+    width: 80%;
+    padding-left: 0;
+    height: auto;
   }
   .header-title-button {
     display: flex;
@@ -301,35 +301,21 @@ button .fa-arrow-right {
   button {
     margin-left: 30px;
   }
-  .header-title-and-img {
-    display: flex;
-    flex-direction: column;
-  }
-  .header-title h1 {
-    margin-left: 30px;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 36px;
-    line-height: normal;
-  }
-  .header-title,
-  .header-img {
-    width: 90%;
-  }
+
+  /* header end */
+
   .blog {
     margin-right: 0;
   }
-  .live-section-title h1 {
-    font-size: 30px;
+  .blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .matches-scedule {
-    margin-left: 5px;
-  }
-  .match-info {
-    padding-right: 20px;
-  }
+
+  /* blog end */
   .highlights {
-    margin-top: 60px;
+    margin-top: 80px;
     display: flex;
     margin-bottom: 80px;
     flex-direction: column;
@@ -346,11 +332,30 @@ button .fa-arrow-right {
   .highlights-description .highlight-button {
     margin-left: 35px;
   }
+  .right-col .highlights-img {
+    width: 300px;
+    height: auto;
+  }
   .right-col .highlights-img img {
     width: 90%;
     margin-top: 30px;
     border-radius: 5px;
   }
+
+  /* highlight section end */
+
+  .matches-scedule {
+    margin-left: 10px;
+  }
+  .live-section-title h1 {
+    font-size: 30px;
+  }
+  .match-info {
+    padding-right: 20px;
+  }
+
+  /* live match section end */
+
   .gold-ball-title h1 {
     font-size: 40px;
     text-align: center;
@@ -366,6 +371,9 @@ button .fa-arrow-right {
   .player-info {
     margin-bottom: 30px;
   }
+
+  /* gold ball section done */
+
   .footer-img img {
     width: 350px;
   }
