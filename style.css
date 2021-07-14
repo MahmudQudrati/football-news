@@ -26,8 +26,9 @@ nav ul {
   margin-top: 0;
   margin-bottom: 0;
   justify-content: space-between;
+  align-items: center;
 }
-span {
+.nav-bar {
   display: flex;
 }
 nav ul li {
@@ -196,4 +197,93 @@ button .fa-arrow-right {
 }
 .copyright-text {
   margin-bottom: 30px;
+}
+/* responsive design start  */
+@media only screen and (max-width: 667px) {
+  .header-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .header-img img {
+    width: 80%;
+    padding-left: 0;
+    height: auto;
+  }
+  .blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-col .highlights-img {
+    width: 300px;
+    height: auto;
+  }
+  .highlights {
+    margin-top: 120px;
+    display: flex;
+    margin-bottom: 80px;
+    flex-direction: column;
+  }
+  nav ul {
+    display: none;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .login-button {
+    display: none;
+  }
+  button {
+    margin-left: 180px;
+    padding-left: 30px;
+  }
+  .header-title-and-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-title h1 {
+    margin-left: 0;
+    max-width: auto;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 36px;
+    line-height: normal;
+  }
+  .header-title,
+  .header-img {
+    width: 90%;
+  }
+  .blog {
+    margin-right: 0;
+  }
+  .highlights {
+    margin-top: 60px;
+    display: flex;
+    margin-bottom: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .highlights-description {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .highlights-description .title h1 {
+    font-size: 30px;
+    line-height: normal;
+  }
+  .highlights-description .highlight-button {
+    margin-left: 35px;
+  }
+  .right-col .highlights-img img {
+    width: 90%;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+  .footer-img img {
+    width: 350px;
+  }
 }
