@@ -176,6 +176,29 @@ button .fa-arrow-right {
   margin-left: 0;
   margin-top: 10px;
 }
+/* golden player */
+.gold-ball-title h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #2d25a0;
+}
+.golden-players {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+}
+.player-info {
+  background-color: rgba(211, 211, 211, 0.445);
+  border-radius: 5px;
+  box-shadow: 2px 2px 40px gray;
+  margin: 0 15px 60px 15px;
+  padding: 15px;
+}
+
+.player-img img {
+  border-radius: 5px;
+}
+
 /* footer  */
 .footer-section {
   display: flex;
@@ -237,17 +260,21 @@ button .fa-arrow-right {
   .login-button {
     display: none;
   }
+  .header-title-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   button {
-    margin-left: 180px;
-    padding-left: 30px;
+    margin-left: 30px;
   }
   .header-title-and-img {
     display: flex;
     flex-direction: column;
   }
   .header-title h1 {
-    margin-left: 0;
-    max-width: auto;
+    margin-left: 30px;
     text-align: center;
     padding-top: 30px;
     font-size: 36px;
@@ -282,6 +309,20 @@ button .fa-arrow-right {
     width: 90%;
     margin-top: 30px;
     border-radius: 5px;
+  }
+  .gold-ball-title h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #2d25a0;
+  }
+  .golden-players {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+  }
+  .player-info {
+    margin-bottom: 30px;
   }
   .footer-img img {
     width: 350px;
